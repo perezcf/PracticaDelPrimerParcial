@@ -13,6 +13,12 @@ namespace PracticaPrimerParcial.ServiceWCF
     public interface IService1
     {
 
+
+        [OperationContract]
+        double PerimetroDeTriangulo(double L1, double L2, double L3);
+
+
+
         [OperationContract]
         string GetData(int value);
 

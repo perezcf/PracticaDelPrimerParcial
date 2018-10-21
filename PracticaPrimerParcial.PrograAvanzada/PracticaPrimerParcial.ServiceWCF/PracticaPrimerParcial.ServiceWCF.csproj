@@ -65,18 +65,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logica\Accion\OperacionTriangulo.cs" />
+    <Compile Include="Logica\Especificacion\OperacionTriangulo.cs" />
     <Compile Include="Logica\Servicio\Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
     <Compile Include="Logica\Interfaces\IService1.cs" />
+    <Compile Include="Logica\Validacion\OperacionTriangulo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Logica\Accion\" />
-    <Folder Include="Logica\Especificacion\" />
     <Folder Include="Logica\Repositorio\" />
-    <Folder Include="Logica\Validacion\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">

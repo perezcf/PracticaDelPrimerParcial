@@ -12,6 +12,17 @@ namespace PracticaPrimerParcial.ServiceWCF
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
+
+        public double PerimetroTriangulo(double L1, double L2, double L3)
+        {
+           // Logica.Especificacion.OperacionTriangulo laEspecificacion;
+            var laEspecificacion = new Logica.Especificacion.OperacionTriangulo();
+            var resultado = laEspecificacion.PerimetroDeTriangulo(L1, L2, L3);
+            return resultado;
+        }
+
+
+
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);
@@ -28,6 +39,11 @@ namespace PracticaPrimerParcial.ServiceWCF
                 composite.StringValue += "Suffix";
             }
             return composite;
+        }
+
+        public double PerimetroDeTriangulo(double L1, double L2, double L3)
+        {
+            throw new NotImplementedException();
         }
     }
 }
